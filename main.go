@@ -10,7 +10,7 @@ import (
 func main() {
 	fmt.Println("Welcome to the Pokedex!")
 	fmt.Println("type help for help, exit to exit")
-	pokeClient := pokeapi.NewClient(5 * time.Second)
+	pokeClient := pokeapi.NewClient(5 * time.Second, 5 * time.Minute)
 	cfg := &config{
 		pokeapiClient: pokeClient,
 	}
